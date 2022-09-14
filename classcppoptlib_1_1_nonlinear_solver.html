@@ -148,17 +148,19 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a674d52b06a2d7e482bdf31b5bc8ee2a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#a674d52b06a2d7e482bdf31b5bc8ee2a5">NonlinearSolver</a> (const json &amp;<a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#a39b6bc5367dce3b91fe799a91921f1d9">solver_params</a>)</td></tr>
+<tr class="memitem:a674d52b06a2d7e482bdf31b5bc8ee2a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#a674d52b06a2d7e482bdf31b5bc8ee2a5">NonlinearSolver</a> (const <a class="el" href="namespacecppoptlib.html#a0f7b4b98d391e61c2f770df45cd880aa">json</a> &amp;<a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#a39b6bc5367dce3b91fe799a91921f1d9">solver_params</a>)</td></tr>
 <tr class="separator:a674d52b06a2d7e482bdf31b5bc8ee2a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe4300acf51ac72a5904c65d091bd8c5"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#abe4300acf51ac72a5904c65d091bd8c5">name</a> () const =0</td></tr>
 <tr class="separator:abe4300acf51ac72a5904c65d091bd8c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcaf21162462720060e720e1075cfc62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#afcaf21162462720060e720e1075cfc62">setLineSearch</a> (const std::string &amp;line_search_name)</td></tr>
 <tr class="separator:afcaf21162462720060e720e1075cfc62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acba5b0fc8b6033488a70dabfafc46c00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#acba5b0fc8b6033488a70dabfafc46c00">minimize_gpu</a> (ProblemType &amp;objFunc, Eigen::Matrix&lt; double, -1, 1 &gt; &amp;<a class="el" href="_spline_basis3d_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>)</td></tr>
+<tr class="separator:acba5b0fc8b6033488a70dabfafc46c00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a2eac95950c8cf06c7d4eebc1d5568c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#a1a2eac95950c8cf06c7d4eebc1d5568c">minimize</a> (ProblemType &amp;objFunc, TVector &amp;<a class="el" href="_spline_basis3d_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>)</td></tr>
 <tr class="separator:a1a2eac95950c8cf06c7d4eebc1d5568c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affd4086830d52d7538efdc184fdc9731"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#affd4086830d52d7538efdc184fdc9731">line_search</a> (const TVector &amp;<a class="el" href="_spline_basis3d_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>, const TVector &amp;delta_x, ProblemType &amp;objFunc)</td></tr>
 <tr class="separator:affd4086830d52d7538efdc184fdc9731"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b7ae05693f1d3e64f7b1eca273b7b2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#a8b7ae05693f1d3e64f7b1eca273b7b2d">getInfo</a> (json &amp;params)</td></tr>
+<tr class="memitem:a8b7ae05693f1d3e64f7b1eca273b7b2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#a8b7ae05693f1d3e64f7b1eca273b7b2d">getInfo</a> (<a class="el" href="namespacecppoptlib.html#a0f7b4b98d391e61c2f770df45cd880aa">json</a> &amp;params)</td></tr>
 <tr class="separator:a8b7ae05693f1d3e64f7b1eca273b7b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a073699ab4394c5b66dba8ad4e1acb827"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#abf3c5030a82da3958bc23c1ee205b581">ErrorCode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#a073699ab4394c5b66dba8ad4e1acb827">error_code</a> () const</td></tr>
 <tr class="separator:a073699ab4394c5b66dba8ad4e1acb827"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,6 +169,8 @@ Public Member Functions</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:ab1651c7dcd4f7269ba77b4d55335a351"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#ab1651c7dcd4f7269ba77b4d55335a351">reset</a> (const ProblemType &amp;objFunc, const TVector &amp;<a class="el" href="_spline_basis3d_8cpp.html#a6150e0515f7202e2fb518f7206ed97dc">x</a>)</td></tr>
 <tr class="separator:ab1651c7dcd4f7269ba77b4d55335a351"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95325ef20b0be139f513547b3f557f4a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#a95325ef20b0be139f513547b3f557f4a">compute_update_direction_gpu</a> (ProblemType &amp;objFunc, const Eigen::Matrix&lt; double, -1, 1 &gt; &amp;x_vec, const Eigen::Matrix&lt; double, -1, 1 &gt; &amp;grad, Eigen::Matrix&lt; double, -1, 1 &gt; &amp;direction)=0</td></tr>
+<tr class="separator:a95325ef20b0be139f513547b3f557f4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50ae1ef959df52fddb792fb9880e9f80"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#a50ae1ef959df52fddb792fb9880e9f80">compute_update_direction</a> (ProblemType &amp;objFunc, const TVector &amp;x_vec, const TVector &amp;grad, TVector &amp;direction)=0</td></tr>
 <tr class="separator:a50ae1ef959df52fddb792fb9880e9f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a5108b56a7a989b5edc1c455c09d36b"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#a2a5108b56a7a989b5edc1c455c09d36b">default_descent_strategy</a> ()=0</td></tr>
@@ -186,7 +190,7 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a39b6bc5367dce3b91fe799a91921f1d9"><td class="memItemLeft" align="right" valign="top">const json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#a39b6bc5367dce3b91fe799a91921f1d9">solver_params</a></td></tr>
+<tr class="memitem:a39b6bc5367dce3b91fe799a91921f1d9"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespacecppoptlib.html#a0f7b4b98d391e61c2f770df45cd880aa">json</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#a39b6bc5367dce3b91fe799a91921f1d9">solver_params</a></td></tr>
 <tr class="separator:a39b6bc5367dce3b91fe799a91921f1d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31ee775ddddd9bafc9fc30284e4801bb"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classpolyfem_1_1solver_1_1line__search_1_1_line_search.html">polyfem::solver::line_search::LineSearch</a>&lt; ProblemType &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#a31ee775ddddd9bafc9fc30284e4801bb">m_line_search</a></td></tr>
 <tr class="separator:a31ee775ddddd9bafc9fc30284e4801bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,7 +204,7 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:ad31a6ea29115f16e763f97487baa6300"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8322ad0593df168fa29fc7275cc8853b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#a8322ad0593df168fa29fc7275cc8853b">use_grad_norm_tol</a></td></tr>
 <tr class="separator:a8322ad0593df168fa29fc7275cc8853b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88253269546f44a143e1d051528bb911"><td class="memItemLeft" align="right" valign="top">json&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#a88253269546f44a143e1d051528bb911">solver_info</a></td></tr>
+<tr class="memitem:a88253269546f44a143e1d051528bb911"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacecppoptlib.html#a0f7b4b98d391e61c2f770df45cd880aa">json</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#a88253269546f44a143e1d051528bb911">solver_info</a></td></tr>
 <tr class="separator:a88253269546f44a143e1d051528bb911"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4fbf183b59d21d5a5de5490329653c9b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#a4fbf183b59d21d5a5de5490329653c9b">total_time</a></td></tr>
 <tr class="separator:a4fbf183b59d21d5a5de5490329653c9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -220,7 +224,7 @@ Protected Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename ProblemType&gt;<br />
 class cppoptlib::NonlinearSolver&lt; ProblemType &gt;</div>
-<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00016">16</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00018">18</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="aa848ff8acc24d5cb997cdf2dfcd5f0ae" name="aa848ff8acc24d5cb997cdf2dfcd5f0ae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa848ff8acc24d5cb997cdf2dfcd5f0ae">&#9670;&nbsp;</a></span>Superclass</h2>
@@ -236,7 +240,7 @@ template&lt;typename ProblemType &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00019">19</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00021">21</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
 
 </div>
 </div>
@@ -268,7 +272,7 @@ template&lt;typename ProblemType &gt; </div>
 <tr><td class="fieldname"><a id="abf3c5030a82da3958bc23c1ee205b581a505a83f220c02df2f85c3810cd9ceb38" name="abf3c5030a82da3958bc23c1ee205b581a505a83f220c02df2f85c3810cd9ceb38"></a>Success&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00023">23</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00025">25</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
 
 </div>
 </div>
@@ -287,7 +291,7 @@ template&lt;typename ProblemType &gt; </div>
         <tr>
           <td class="memname"><a class="el" href="classcppoptlib_1_1_nonlinear_solver.html">cppoptlib::NonlinearSolver</a>&lt; ProblemType &gt;::NonlinearSolver </td>
           <td>(</td>
-          <td class="paramtype">const json &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="namespacecppoptlib.html#a0f7b4b98d391e61c2f770df45cd880aa">json</a> &amp;&#160;</td>
           <td class="paramname"><em>solver_params</em></td><td>)</td>
           <td></td>
         </tr>
@@ -299,9 +303,9 @@ template&lt;typename ProblemType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00030">30</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00032">32</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_nonlinear_solver_8hpp_source.html#l00342">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::normalize_gradient</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00048">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::setLineSearch()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00328">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::solver_params</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00343">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::use_grad_norm_tol</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00341">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::use_gradient_norm</a>.</p>
+<p class="reference">References <a class="el" href="_nonlinear_solver_8hpp_source.html#l00349">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::normalize_gradient</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00050">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::setLineSearch()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00335">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::solver_params</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00350">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::use_grad_norm_tol</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00348">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::use_gradient_norm</a>.</p>
 
 </div>
 </div>
@@ -356,7 +360,59 @@ template&lt;typename ProblemType &gt; </div>
 
 <p>Implemented in <a class="el" href="classcppoptlib_1_1_l_b_f_g_s_solver.html#aa4908d8716a99eb8ac3e67b1427680e9">cppoptlib::LBFGSSolver&lt; ProblemType &gt;</a>, and <a class="el" href="classcppoptlib_1_1_sparse_newton_descent_solver.html#a8ab815753fece5e57a20ddb9b0365596">cppoptlib::SparseNewtonDescentSolver&lt; ProblemType &gt;</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00054">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::minimize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00058">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::minimize()</a>.</p>
+
+</div>
+</div>
+<a id="a95325ef20b0be139f513547b3f557f4a" name="a95325ef20b0be139f513547b3f557f4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95325ef20b0be139f513547b3f557f4a">&#9670;&nbsp;</a></span>compute_update_direction_gpu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ProblemType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool <a class="el" href="classcppoptlib_1_1_nonlinear_solver.html">cppoptlib::NonlinearSolver</a>&lt; ProblemType &gt;::compute_update_direction_gpu </td>
+          <td>(</td>
+          <td class="paramtype">ProblemType &amp;&#160;</td>
+          <td class="paramname"><em>objFunc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Eigen::Matrix&lt; double, -1, 1 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>x_vec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Eigen::Matrix&lt; double, -1, 1 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>grad</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Eigen::Matrix&lt; double, -1, 1 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>direction</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classcppoptlib_1_1_l_b_f_g_s_solver.html#a0fc496d4960853c87f2eb33d985525a7">cppoptlib::LBFGSSolver&lt; ProblemType &gt;</a>, and <a class="el" href="classcppoptlib_1_1_sparse_newton_descent_solver.html#a53a432d364e623edb00197e152ca9f5a">cppoptlib::SparseNewtonDescentSolver&lt; ProblemType &gt;</a>.</p>
 
 </div>
 </div>
@@ -387,7 +443,7 @@ template&lt;typename ProblemType &gt; </div>
 
 <p>Implemented in <a class="el" href="classcppoptlib_1_1_l_b_f_g_s_solver.html#a3bbc88f9f0f024f718f3bd23875a2e7b">cppoptlib::LBFGSSolver&lt; ProblemType &gt;</a>, and <a class="el" href="classcppoptlib_1_1_sparse_newton_descent_solver.html#ab2b94a0d16385cb24a4951d86ea24235">cppoptlib::SparseNewtonDescentSolver&lt; ProblemType &gt;</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00054">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::minimize()</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00316">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::reset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00058">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::minimize()</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00322">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::reset()</a>.</p>
 
 </div>
 </div>
@@ -418,11 +474,11 @@ template&lt;typename ProblemType &gt; </div>
 
 <p>Reimplemented in <a class="el" href="classcppoptlib_1_1_l_b_f_g_s_solver.html#a107a4558ff1894a3373b8ef1ae408b91">cppoptlib::LBFGSSolver&lt; ProblemType &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00334">334</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00341">341</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_nonlinear_solver_8hpp_source.html#l00338">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::descent_strategy</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00334">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::descent_strategy_name()</a>.</p>
+<p class="reference">References <a class="el" href="_nonlinear_solver_8hpp_source.html#l00345">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::descent_strategy</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00341">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::descent_strategy_name()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00334">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::descent_strategy_name()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00280">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::line_search()</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00054">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::minimize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00341">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::descent_strategy_name()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00286">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::line_search()</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00058">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::minimize()</a>.</p>
 
 </div>
 </div>
@@ -481,9 +537,9 @@ template&lt;typename ProblemType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00312">312</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00318">318</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_nonlinear_solver_8hpp_source.html#l00340">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::m_error_code</a>.</p>
+<p class="reference">References <a class="el" href="_nonlinear_solver_8hpp_source.html#l00347">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::m_error_code</a>.</p>
 
 </div>
 </div>
@@ -501,7 +557,7 @@ template&lt;typename ProblemType &gt; </div>
         <tr>
           <td class="memname">void <a class="el" href="classcppoptlib_1_1_nonlinear_solver.html">cppoptlib::NonlinearSolver</a>&lt; ProblemType &gt;::getInfo </td>
           <td>(</td>
-          <td class="paramtype">json &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="namespacecppoptlib.html#a0f7b4b98d391e61c2f770df45cd880aa">json</a> &amp;&#160;</td>
           <td class="paramname"><em>params</em></td><td>)</td>
           <td></td>
         </tr>
@@ -513,9 +569,9 @@ template&lt;typename ProblemType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00307">307</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00313">313</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_nonlinear_solver_8hpp_source.html#l00345">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::solver_info</a>.</p>
+<p class="reference">References <a class="el" href="_nonlinear_solver_8hpp_source.html#l00352">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::solver_info</a>.</p>
 
 </div>
 </div>
@@ -546,7 +602,7 @@ template&lt;typename ProblemType &gt; </div>
 
 <p>Implemented in <a class="el" href="classcppoptlib_1_1_l_b_f_g_s_solver.html#a7b199d828b86ad904419717e4584d9a9">cppoptlib::LBFGSSolver&lt; ProblemType &gt;</a>, and <a class="el" href="classcppoptlib_1_1_sparse_newton_descent_solver.html#acffac49cd50a6cc1356ae78a645f1193">cppoptlib::SparseNewtonDescentSolver&lt; ProblemType &gt;</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00280">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::line_search()</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00054">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::minimize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00286">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::line_search()</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00058">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::minimize()</a>.</p>
 
 </div>
 </div>
@@ -592,11 +648,11 @@ template&lt;typename ProblemType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00280">280</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00286">286</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_nonlinear_solver_8hpp_source.html#l00338">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::descent_strategy</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00334">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::descent_strategy_name()</a>, <a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#add8f592c83e28ed9b4d7967518248cde">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::increase_descent_strategy()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00351">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::line_search_time</a>, <a class="el" href="_logger_8cpp_source.html#l00021">polyfem::logger()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00336">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::m_line_search</a>, <a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#abe4300acf51ac72a5904c65d091bd8c5">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::name()</a>, <a class="el" href="_timer_8hpp_source.html#l00005">POLYFEM_SCOPED_TIMER</a>, and <a class="el" href="_spline_basis3d_8cpp_source.html#l00052">x</a>.</p>
+<p class="reference">References <a class="el" href="_nonlinear_solver_8hpp_source.html#l00345">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::descent_strategy</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00341">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::descent_strategy_name()</a>, <a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#add8f592c83e28ed9b4d7967518248cde">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::increase_descent_strategy()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00358">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::line_search_time</a>, <a class="el" href="_logger_8cpp_source.html#l00021">polyfem::logger()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00343">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::m_line_search</a>, <a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#abe4300acf51ac72a5904c65d091bd8c5">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::name()</a>, <a class="el" href="_timer_8hpp_source.html#l00005">POLYFEM_SCOPED_TIMER</a>, and <a class="el" href="_spline_basis3d_8cpp_source.html#l00052">x</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00054">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::minimize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00058">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::minimize()</a>.</p>
 
 </div>
 </div>
@@ -625,11 +681,11 @@ template&lt;typename ProblemType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00413">413</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00420">420</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_nonlinear_solver_8hpp_source.html#l00349">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::assembly_time</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00352">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::constraint_set_update_time</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00348">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::grad_time</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00350">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::inverting_time</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00351">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::line_search_time</a>, <a class="el" href="_logger_8cpp_source.html#l00021">polyfem::logger()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00336">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::m_line_search</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00353">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::obj_fun_time</a>.</p>
+<p class="reference">References <a class="el" href="_nonlinear_solver_8hpp_source.html#l00356">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::assembly_time</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00359">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::constraint_set_update_time</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00355">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::grad_time</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00357">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::inverting_time</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00358">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::line_search_time</a>, <a class="el" href="_logger_8cpp_source.html#l00021">polyfem::logger()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00343">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::m_line_search</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00360">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::obj_fun_time</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00054">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::minimize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00058">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::minimize()</a>.</p>
 
 </div>
 </div>
@@ -669,9 +725,39 @@ template&lt;typename ProblemType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00054">54</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00058">58</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#a50ae1ef959df52fddb792fb9880e9f80">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::compute_update_direction()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00352">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::constraint_set_update_time</a>, <a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#a2a5108b56a7a989b5edc1c455c09d36b">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::default_descent_strategy()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00338">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::descent_strategy</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00334">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::descent_strategy_name()</a>, <a class="el" href="_timer_8hpp_source.html#l00058">polyfem::utils::Timer::getElapsedTimeInSec()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00348">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::grad_time</a>, <a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#add8f592c83e28ed9b4d7967518248cde">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::increase_descent_strategy()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00280">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::line_search()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00413">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::log_times()</a>, <a class="el" href="_logger_8cpp_source.html#l00021">polyfem::logger()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00340">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::m_error_code</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00336">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::m_line_search</a>, <a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#abe4300acf51ac72a5904c65d091bd8c5">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::name()</a>, <a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#abf3c5030a82da3958bc23c1ee205b581ae5ca52e49ab45484befdae67d5b9b3c2">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::NanEncountered</a>, <a class="el" href="p__bases_8py_source.html#l00238">p_bases::norm</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00342">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::normalize_gradient</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00353">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::obj_fun_time</a>, <a class="el" href="_timer_8hpp_source.html#l00005">POLYFEM_SCOPED_TIMER</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00316">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::reset()</a>, <a class="el" href="_timer_8hpp_source.html#l00043">polyfem::utils::Timer::start()</a>, <a class="el" href="_timer_8hpp_source.html#l00048">polyfem::utils::Timer::stop()</a>, <a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#abf3c5030a82da3958bc23c1ee205b581a505a83f220c02df2f85c3810cd9ceb38">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::Success</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00347">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::total_time</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00370">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::update_solver_info()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00343">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::use_grad_norm_tol</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00341">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::use_gradient_norm</a>, and <a class="el" href="_spline_basis3d_8cpp_source.html#l00052">x</a>.</p>
+<p class="reference">References <a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#a50ae1ef959df52fddb792fb9880e9f80">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::compute_update_direction()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00359">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::constraint_set_update_time</a>, <a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#a2a5108b56a7a989b5edc1c455c09d36b">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::default_descent_strategy()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00345">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::descent_strategy</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00341">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::descent_strategy_name()</a>, <a class="el" href="_timer_8hpp_source.html#l00058">polyfem::utils::Timer::getElapsedTimeInSec()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00355">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::grad_time</a>, <a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#add8f592c83e28ed9b4d7967518248cde">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::increase_descent_strategy()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00286">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::line_search()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00420">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::log_times()</a>, <a class="el" href="_logger_8cpp_source.html#l00021">polyfem::logger()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00347">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::m_error_code</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00343">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::m_line_search</a>, <a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#abe4300acf51ac72a5904c65d091bd8c5">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::name()</a>, <a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#abf3c5030a82da3958bc23c1ee205b581ae5ca52e49ab45484befdae67d5b9b3c2">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::NanEncountered</a>, <a class="el" href="p__bases_8py_source.html#l00238">p_bases::norm</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00349">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::normalize_gradient</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00360">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::obj_fun_time</a>, <a class="el" href="_timer_8hpp_source.html#l00005">POLYFEM_SCOPED_TIMER</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00322">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::reset()</a>, <a class="el" href="_timer_8hpp_source.html#l00043">polyfem::utils::Timer::start()</a>, <a class="el" href="_timer_8hpp_source.html#l00048">polyfem::utils::Timer::stop()</a>, <a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#abf3c5030a82da3958bc23c1ee205b581a505a83f220c02df2f85c3810cd9ceb38">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::Success</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00354">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::total_time</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00377">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::update_solver_info()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00350">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::use_grad_norm_tol</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00348">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::use_gradient_norm</a>, and <a class="el" href="_spline_basis3d_8cpp_source.html#l00052">x</a>.</p>
+
+</div>
+</div>
+<a id="acba5b0fc8b6033488a70dabfafc46c00" name="acba5b0fc8b6033488a70dabfafc46c00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acba5b0fc8b6033488a70dabfafc46c00">&#9670;&nbsp;</a></span>minimize_gpu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ProblemType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classcppoptlib_1_1_nonlinear_solver.html">cppoptlib::NonlinearSolver</a>&lt; ProblemType &gt;::minimize_gpu </td>
+          <td>(</td>
+          <td class="paramtype">ProblemType &amp;&#160;</td>
+          <td class="paramname"><em>objFunc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Eigen::Matrix&lt; double, -1, 1 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>x</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -702,7 +788,7 @@ template&lt;typename ProblemType &gt; </div>
 
 <p>Implemented in <a class="el" href="classcppoptlib_1_1_l_b_f_g_s_solver.html#abff7a650655eb86d5251ca45bf3922b3">cppoptlib::LBFGSSolver&lt; ProblemType &gt;</a>, and <a class="el" href="classcppoptlib_1_1_sparse_newton_descent_solver.html#aef326b7f5c2669fdd8f0db99e3b4b3c3">cppoptlib::SparseNewtonDescentSolver&lt; ProblemType &gt;</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00280">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::line_search()</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00054">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::minimize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00286">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::line_search()</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00058">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::minimize()</a>.</p>
 
 </div>
 </div>
@@ -744,11 +830,11 @@ template&lt;typename ProblemType &gt; </div>
 
 <p>Reimplemented in <a class="el" href="classcppoptlib_1_1_l_b_f_g_s_solver.html#a9d9c660a129f7f362786c0886406c7b4">cppoptlib::LBFGSSolver&lt; ProblemType &gt;</a>, and <a class="el" href="classcppoptlib_1_1_sparse_newton_descent_solver.html#aab624bcd7e4c8fb967b417b6790858fd">cppoptlib::SparseNewtonDescentSolver&lt; ProblemType &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00316">316</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00322">322</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#a2a5108b56a7a989b5edc1c455c09d36b">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::default_descent_strategy()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00338">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::descent_strategy</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00340">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::m_error_code</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00355">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::reset_times()</a>, and <a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#abf3c5030a82da3958bc23c1ee205b581a505a83f220c02df2f85c3810cd9ceb38">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::Success</a>.</p>
+<p class="reference">References <a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#a2a5108b56a7a989b5edc1c455c09d36b">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::default_descent_strategy()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00345">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::descent_strategy</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00347">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::m_error_code</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00362">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::reset_times()</a>, and <a class="el" href="classcppoptlib_1_1_nonlinear_solver.html#abf3c5030a82da3958bc23c1ee205b581a505a83f220c02df2f85c3810cd9ceb38">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::Success</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00054">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::minimize()</a>, <a class="el" href="_l_b_f_g_s_solver_8hpp_source.html#l00074">cppoptlib::LBFGSSolver&lt; ProblemType &gt;::reset()</a>, and <a class="el" href="_sparse_newton_descent_solver_8hpp_source.html#l00078">cppoptlib::SparseNewtonDescentSolver&lt; ProblemType &gt;::reset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00058">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::minimize()</a>, <a class="el" href="_l_b_f_g_s_solver_8hpp_source.html#l00074">cppoptlib::LBFGSSolver&lt; ProblemType &gt;::reset()</a>, and <a class="el" href="_sparse_newton_descent_solver_8hpp_source.html#l00078">cppoptlib::SparseNewtonDescentSolver&lt; ProblemType &gt;::reset()</a>.</p>
 
 </div>
 </div>
@@ -777,11 +863,11 @@ template&lt;typename ProblemType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00355">355</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00362">362</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_nonlinear_solver_8hpp_source.html#l00349">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::assembly_time</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00352">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::constraint_set_update_time</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00348">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::grad_time</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00350">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::inverting_time</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00351">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::line_search_time</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00336">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::m_line_search</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00353">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::obj_fun_time</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00347">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::total_time</a>.</p>
+<p class="reference">References <a class="el" href="_nonlinear_solver_8hpp_source.html#l00356">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::assembly_time</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00359">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::constraint_set_update_time</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00355">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::grad_time</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00357">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::inverting_time</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00358">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::line_search_time</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00343">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::m_line_search</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00360">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::obj_fun_time</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00354">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::total_time</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00316">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::reset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00322">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::reset()</a>.</p>
 
 </div>
 </div>
@@ -811,11 +897,11 @@ template&lt;typename ProblemType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00048">48</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00050">50</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="classpolyfem_1_1solver_1_1line__search_1_1_line_search.html#abc87fc0f9c489c0eec0ebcdcf6c7474f">polyfem::solver::line_search::LineSearch&lt; ProblemType &gt;::construct_line_search()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00336">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::m_line_search</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00345">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::solver_info</a>.</p>
+<p class="reference">References <a class="el" href="classpolyfem_1_1solver_1_1line__search_1_1_line_search.html#abc87fc0f9c489c0eec0ebcdcf6c7474f">polyfem::solver::line_search::LineSearch&lt; ProblemType &gt;::construct_line_search()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00343">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::m_line_search</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00352">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::solver_info</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00030">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::NonlinearSolver()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00032">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::NonlinearSolver()</a>.</p>
 
 </div>
 </div>
@@ -846,11 +932,11 @@ template&lt;typename ProblemType &gt; </div>
 
 <p>Reimplemented in <a class="el" href="classcppoptlib_1_1_sparse_newton_descent_solver.html#adfee0010a575b6ade54621a7be148e0e">cppoptlib::SparseNewtonDescentSolver&lt; ProblemType &gt;</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00370">370</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00377">377</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="_nonlinear_solver_8hpp_source.html#l00349">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::assembly_time</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00352">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::constraint_set_update_time</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00348">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::grad_time</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00350">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::inverting_time</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00351">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::line_search_time</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00340">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::m_error_code</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00336">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::m_line_search</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00342">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::normalize_gradient</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00353">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::obj_fun_time</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00345">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::solver_info</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00347">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::total_time</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00341">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::use_gradient_norm</a>.</p>
+<p class="reference">References <a class="el" href="_nonlinear_solver_8hpp_source.html#l00356">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::assembly_time</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00359">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::constraint_set_update_time</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00355">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::grad_time</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00357">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::inverting_time</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00358">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::line_search_time</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00347">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::m_error_code</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00343">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::m_line_search</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00349">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::normalize_gradient</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00360">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::obj_fun_time</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00352">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::solver_info</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00354">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::total_time</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00348">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::use_gradient_norm</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00054">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::minimize()</a>, and <a class="el" href="_sparse_newton_descent_solver_8hpp_source.html#l00189">cppoptlib::SparseNewtonDescentSolver&lt; ProblemType &gt;::update_solver_info()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00058">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::minimize()</a>, and <a class="el" href="_sparse_newton_descent_solver_8hpp_source.html#l00204">cppoptlib::SparseNewtonDescentSolver&lt; ProblemType &gt;::update_solver_info()</a>.</p>
 
 </div>
 </div>
@@ -877,9 +963,9 @@ template&lt;typename ProblemType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00349">349</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00356">356</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_sparse_newton_descent_solver_8hpp_source.html#l00088">cppoptlib::SparseNewtonDescentSolver&lt; ProblemType &gt;::compute_update_direction()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00413">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::log_times()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00355">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::reset_times()</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00370">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::update_solver_info()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_sparse_newton_descent_solver_8hpp_source.html#l00103">cppoptlib::SparseNewtonDescentSolver&lt; ProblemType &gt;::compute_update_direction()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00420">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::log_times()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00362">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::reset_times()</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00377">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::update_solver_info()</a>.</p>
 
 </div>
 </div>
@@ -905,9 +991,9 @@ template&lt;typename ProblemType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00352">352</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00359">359</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00413">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::log_times()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00054">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::minimize()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00355">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::reset_times()</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00370">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::update_solver_info()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00420">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::log_times()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00058">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::minimize()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00362">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::reset_times()</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00377">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::update_solver_info()</a>.</p>
 
 </div>
 </div>
@@ -933,9 +1019,9 @@ template&lt;typename ProblemType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00338">338</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00345">345</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_l_b_f_g_s_solver_8hpp_source.html#l00086">cppoptlib::LBFGSSolver&lt; ProblemType &gt;::compute_update_direction()</a>, <a class="el" href="_sparse_newton_descent_solver_8hpp_source.html#l00088">cppoptlib::SparseNewtonDescentSolver&lt; ProblemType &gt;::compute_update_direction()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00334">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::descent_strategy_name()</a>, <a class="el" href="_l_b_f_g_s_solver_8hpp_source.html#l00037">cppoptlib::LBFGSSolver&lt; ProblemType &gt;::descent_strategy_name()</a>, <a class="el" href="_sparse_newton_descent_solver_8hpp_source.html#l00036">cppoptlib::SparseNewtonDescentSolver&lt; ProblemType &gt;::descent_strategy_name()</a>, <a class="el" href="_l_b_f_g_s_solver_8hpp_source.html#l00050">cppoptlib::LBFGSSolver&lt; ProblemType &gt;::increase_descent_strategy()</a>, <a class="el" href="_sparse_newton_descent_solver_8hpp_source.html#l00053">cppoptlib::SparseNewtonDescentSolver&lt; ProblemType &gt;::increase_descent_strategy()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00280">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::line_search()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00054">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::minimize()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00316">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::reset()</a>, and <a class="el" href="_l_b_f_g_s_solver_8hpp_source.html#l00074">cppoptlib::LBFGSSolver&lt; ProblemType &gt;::reset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_l_b_f_g_s_solver_8hpp_source.html#l00095">cppoptlib::LBFGSSolver&lt; ProblemType &gt;::compute_update_direction()</a>, <a class="el" href="_sparse_newton_descent_solver_8hpp_source.html#l00103">cppoptlib::SparseNewtonDescentSolver&lt; ProblemType &gt;::compute_update_direction()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00341">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::descent_strategy_name()</a>, <a class="el" href="_l_b_f_g_s_solver_8hpp_source.html#l00037">cppoptlib::LBFGSSolver&lt; ProblemType &gt;::descent_strategy_name()</a>, <a class="el" href="_sparse_newton_descent_solver_8hpp_source.html#l00036">cppoptlib::SparseNewtonDescentSolver&lt; ProblemType &gt;::descent_strategy_name()</a>, <a class="el" href="_l_b_f_g_s_solver_8hpp_source.html#l00050">cppoptlib::LBFGSSolver&lt; ProblemType &gt;::increase_descent_strategy()</a>, <a class="el" href="_sparse_newton_descent_solver_8hpp_source.html#l00053">cppoptlib::SparseNewtonDescentSolver&lt; ProblemType &gt;::increase_descent_strategy()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00286">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::line_search()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00058">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::minimize()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00322">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::reset()</a>, and <a class="el" href="_l_b_f_g_s_solver_8hpp_source.html#l00074">cppoptlib::LBFGSSolver&lt; ProblemType &gt;::reset()</a>.</p>
 
 </div>
 </div>
@@ -961,9 +1047,9 @@ template&lt;typename ProblemType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00348">348</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00355">355</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00413">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::log_times()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00054">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::minimize()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00355">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::reset_times()</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00370">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::update_solver_info()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00420">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::log_times()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00058">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::minimize()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00362">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::reset_times()</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00377">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::update_solver_info()</a>.</p>
 
 </div>
 </div>
@@ -989,9 +1075,9 @@ template&lt;typename ProblemType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00350">350</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00357">357</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_sparse_newton_descent_solver_8hpp_source.html#l00088">cppoptlib::SparseNewtonDescentSolver&lt; ProblemType &gt;::compute_update_direction()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00413">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::log_times()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00355">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::reset_times()</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00370">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::update_solver_info()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_sparse_newton_descent_solver_8hpp_source.html#l00103">cppoptlib::SparseNewtonDescentSolver&lt; ProblemType &gt;::compute_update_direction()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00420">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::log_times()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00362">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::reset_times()</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00377">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::update_solver_info()</a>.</p>
 
 </div>
 </div>
@@ -1017,9 +1103,9 @@ template&lt;typename ProblemType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00351">351</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00358">358</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00280">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::line_search()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00413">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::log_times()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00355">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::reset_times()</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00370">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::update_solver_info()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00286">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::line_search()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00420">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::log_times()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00362">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::reset_times()</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00377">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::update_solver_info()</a>.</p>
 
 </div>
 </div>
@@ -1045,9 +1131,9 @@ template&lt;typename ProblemType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00340">340</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00347">347</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00312">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::error_code()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00054">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::minimize()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00316">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::reset()</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00370">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::update_solver_info()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00318">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::error_code()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00058">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::minimize()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00322">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::reset()</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00377">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::update_solver_info()</a>.</p>
 
 </div>
 </div>
@@ -1073,9 +1159,9 @@ template&lt;typename ProblemType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00336">336</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00343">343</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00280">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::line_search()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00413">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::log_times()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00054">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::minimize()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00355">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::reset_times()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00048">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::setLineSearch()</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00370">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::update_solver_info()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00286">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::line_search()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00420">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::log_times()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00058">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::minimize()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00362">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::reset_times()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00050">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::setLineSearch()</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00377">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::update_solver_info()</a>.</p>
 
 </div>
 </div>
@@ -1101,9 +1187,9 @@ template&lt;typename ProblemType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00342">342</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00349">349</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00054">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::minimize()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00030">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::NonlinearSolver()</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00370">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::update_solver_info()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00058">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::minimize()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00032">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::NonlinearSolver()</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00377">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::update_solver_info()</a>.</p>
 
 </div>
 </div>
@@ -1129,9 +1215,9 @@ template&lt;typename ProblemType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00353">353</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00360">360</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00413">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::log_times()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00054">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::minimize()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00355">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::reset_times()</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00370">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::update_solver_info()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00420">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::log_times()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00058">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::minimize()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00362">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::reset_times()</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00377">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::update_solver_info()</a>.</p>
 
 </div>
 </div>
@@ -1147,7 +1233,7 @@ template&lt;typename ProblemType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">json <a class="el" href="classcppoptlib_1_1_nonlinear_solver.html">cppoptlib::NonlinearSolver</a>&lt; ProblemType &gt;::solver_info</td>
+          <td class="memname"><a class="el" href="namespacecppoptlib.html#a0f7b4b98d391e61c2f770df45cd880aa">json</a> <a class="el" href="classcppoptlib_1_1_nonlinear_solver.html">cppoptlib::NonlinearSolver</a>&lt; ProblemType &gt;::solver_info</td>
         </tr>
       </table>
   </td>
@@ -1157,9 +1243,9 @@ template&lt;typename ProblemType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00345">345</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00352">352</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00307">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::getInfo()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00048">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::setLineSearch()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00370">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::update_solver_info()</a>, and <a class="el" href="_sparse_newton_descent_solver_8hpp_source.html#l00189">cppoptlib::SparseNewtonDescentSolver&lt; ProblemType &gt;::update_solver_info()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00313">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::getInfo()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00050">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::setLineSearch()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00377">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::update_solver_info()</a>, and <a class="el" href="_sparse_newton_descent_solver_8hpp_source.html#l00204">cppoptlib::SparseNewtonDescentSolver&lt; ProblemType &gt;::update_solver_info()</a>.</p>
 
 </div>
 </div>
@@ -1175,7 +1261,7 @@ template&lt;typename ProblemType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const json <a class="el" href="classcppoptlib_1_1_nonlinear_solver.html">cppoptlib::NonlinearSolver</a>&lt; ProblemType &gt;::solver_params</td>
+          <td class="memname">const <a class="el" href="namespacecppoptlib.html#a0f7b4b98d391e61c2f770df45cd880aa">json</a> <a class="el" href="classcppoptlib_1_1_nonlinear_solver.html">cppoptlib::NonlinearSolver</a>&lt; ProblemType &gt;::solver_params</td>
         </tr>
       </table>
   </td>
@@ -1185,9 +1271,9 @@ template&lt;typename ProblemType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00328">328</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00335">335</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00030">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::NonlinearSolver()</a>, and <a class="el" href="_sparse_newton_descent_solver_8hpp_source.html#l00078">cppoptlib::SparseNewtonDescentSolver&lt; ProblemType &gt;::reset()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00032">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::NonlinearSolver()</a>, and <a class="el" href="_sparse_newton_descent_solver_8hpp_source.html#l00078">cppoptlib::SparseNewtonDescentSolver&lt; ProblemType &gt;::reset()</a>.</p>
 
 </div>
 </div>
@@ -1213,9 +1299,9 @@ template&lt;typename ProblemType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00347">347</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00354">354</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00054">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::minimize()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00355">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::reset_times()</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00370">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::update_solver_info()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00058">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::minimize()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00362">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::reset_times()</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00377">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::update_solver_info()</a>.</p>
 
 </div>
 </div>
@@ -1241,9 +1327,9 @@ template&lt;typename ProblemType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00343">343</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00350">350</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00054">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::minimize()</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00030">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::NonlinearSolver()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00058">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::minimize()</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00032">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::NonlinearSolver()</a>.</p>
 
 </div>
 </div>
@@ -1269,9 +1355,9 @@ template&lt;typename ProblemType &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00341">341</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_nonlinear_solver_8hpp_source.html#l00348">348</a> of file <a class="el" href="_nonlinear_solver_8hpp_source.html">NonlinearSolver.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00054">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::minimize()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00030">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::NonlinearSolver()</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00370">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::update_solver_info()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_nonlinear_solver_8hpp_source.html#l00058">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::minimize()</a>, <a class="el" href="_nonlinear_solver_8hpp_source.html#l00032">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::NonlinearSolver()</a>, and <a class="el" href="_nonlinear_solver_8hpp_source.html#l00377">cppoptlib::NonlinearSolver&lt; ProblemType &gt;::update_solver_info()</a>.</p>
 
 </div>
 </div>

@@ -3,6 +3,7 @@ var classcppoptlib_1_1_l_b_f_g_s_solver =
     [ "Superclass", "classcppoptlib_1_1_l_b_f_g_s_solver.html#a0aef5ce6596639e38020973e955ada16", null ],
     [ "LBFGSSolver", "classcppoptlib_1_1_l_b_f_g_s_solver.html#aba224462bfe385d37df3656762458ebc", null ],
     [ "compute_update_direction", "classcppoptlib_1_1_l_b_f_g_s_solver.html#aa4908d8716a99eb8ac3e67b1427680e9", null ],
+    [ "compute_update_direction_gpu", "classcppoptlib_1_1_l_b_f_g_s_solver.html#a0fc496d4960853c87f2eb33d985525a7", null ],
     [ "default_descent_strategy", "classcppoptlib_1_1_l_b_f_g_s_solver.html#a3bbc88f9f0f024f718f3bd23875a2e7b", null ],
     [ "descent_strategy_name", "classcppoptlib_1_1_l_b_f_g_s_solver.html#a107a4558ff1894a3373b8ef1ae408b91", null ],
     [ "descent_strategy_name", "classcppoptlib_1_1_l_b_f_g_s_solver.html#a54202b43d98e7d53422c2b601309b487", null ],

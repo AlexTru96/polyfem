@@ -3,6 +3,8 @@ var classcppoptlib_1_1_sparse_newton_descent_solver =
     [ "Superclass", "classcppoptlib_1_1_sparse_newton_descent_solver.html#ad981db542a2923317daa1fea9bb3adf9", null ],
     [ "SparseNewtonDescentSolver", "classcppoptlib_1_1_sparse_newton_descent_solver.html#a8c4e068f65bf8e594fc46291a9994703", null ],
     [ "compute_update_direction", "classcppoptlib_1_1_sparse_newton_descent_solver.html#a8ab815753fece5e57a20ddb9b0365596", null ],
+    [ "compute_update_direction_cuda", "classcppoptlib_1_1_sparse_newton_descent_solver.html#a5a6f6dd3bb61600eca3ac737fd6e1785", null ],
+    [ "compute_update_direction_gpu", "classcppoptlib_1_1_sparse_newton_descent_solver.html#a53a432d364e623edb00197e152ca9f5a", null ],
     [ "default_descent_strategy", "classcppoptlib_1_1_sparse_newton_descent_solver.html#ab2b94a0d16385cb24a4951d86ea24235", null ],
     [ "descent_strategy_name", "classcppoptlib_1_1_sparse_newton_descent_solver.html#aa57081d7bebeabd07be89f4fc2c9a88d", null ],
     [ "increase_descent_strategy", "classcppoptlib_1_1_sparse_newton_descent_solver.html#acffac49cd50a6cc1356ae78a645f1193", null ],
