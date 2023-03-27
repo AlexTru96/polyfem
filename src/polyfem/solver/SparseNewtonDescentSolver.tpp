@@ -77,7 +77,7 @@ namespace cppoptlib
 		assemble_hessian(objFunc, x, hessian);
 
 #ifdef POLYSOLVE_WITH_PETSC
-		if (!solve_linear_system_gpu(hessian, grad, direction))
+		if (!solve_linear_system_petsc(hessian, grad, direction))
 			return compute_update_direction(objFunc, x, grad, direction);
 #else
 		if (!solve_linear_system(hessian, grad, direction))
@@ -184,7 +184,7 @@ namespace cppoptlib
 		*/
 		try
 		{
-			linear_solver->factorize(hessian, 0, 99);
+			linear_solver->factorize(hessian, 0, 5);
 		}
 		catch (const std::runtime_error &err)
 		{

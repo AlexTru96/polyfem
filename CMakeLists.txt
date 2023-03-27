@@ -99,7 +99,7 @@ option(POLYSOLVE_WITH_SUPERLU "Enable SuperLU library" ON)
 option(POLYSOLVE_WITH_MKL "Enable MKL library" ON)
 option(POLYSOLVE_WITH_PARDISO "Enable Pardiso library" ON)
 option(POLYSOLVE_WITH_HYPRE "Enable hypre" OFF)
-option(POLYSOLVE_WITH_AMGCL "Use AMGCL" ON)
+option(POLYSOLVE_WITH_AMGCL "Use AMGCL" OFF)
 option(POLYSOLVE_WITH_SPECTRA "Enable computing spectrum" OFF)
 option(POLYSOLVE_LARGE_INDEX "Build for large indices" OFF)
 
@@ -130,15 +130,15 @@ option(LIBIGL_WITH_VIEWER "Use OpenGL viewer" ON)
 option(LIBIGL_WITH_XML "Use XML" OFF)
 option(LIBIGL_WITH_TETGEN "Use Tetgen" OFF)
 
-set(WITH_GPU OFF)
+set(WITH_GPU ON)
 
 if(WITH_GPU)
     # find_package(MPI)
 
     # target_link_libraries(polyfem PUBLIC MPI::MPI_CXX)
-    option(POLYSOLVE_WITH_PETSC "Enable PETSC" OFF)
-    option(POLYSOLVE_WITH_CUSOLVER "Enable cuSOLVER library" OFF)
-    option(POLYSOLVE_WITH_CUDA "Enable CUDA" OFF)
+    option(POLYSOLVE_WITH_PETSC "Enable PETSC" ON)
+    option(POLYSOLVE_WITH_CUSOLVER "Enable cuSOLVER library" ON)
+    option(POLYSOLVE_WITH_CUDA "Enable CUDA" ON)
     message(STATUS "Using PolyFEM with CUDA backend")
     add_definitions(-DUSE_GPU)
 
@@ -433,5 +433,4 @@ if(WITH_GPU)
         -lcurand
         ${CUDA_cusparse_LIBRARY}
     )
-    target_link_libraries(polyfem PUBLIC ${CUDA_cusparse_LIBRARY})
 endif()
