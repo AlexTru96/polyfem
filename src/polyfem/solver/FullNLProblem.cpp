@@ -1,6 +1,6 @@
 #include "FullNLProblem.hpp"
 #include <polyfem/utils/Logger.hpp>
-//#include <polyfem/MaybeParallelFor.hpp>
+// #include <polyfem/MaybeParallelFor.hpp>
 
 #include <igl/Timer.h>
 
@@ -120,7 +120,7 @@ namespace polyfem::solver
 
 		hessian.resize(x.size(), x.size());
 
-#ifndef USE_GPU
+#ifndef USE_ELASTIC_GPU
 		for (auto &f : forms_)
 		{
 			if (!f->enabled())
@@ -134,7 +134,7 @@ namespace polyfem::solver
 			logger().trace("done partial sum hessian -- {}s...", timerg.getElapsedTime());
 		}
 #endif
-#ifdef USE_GPU
+#ifdef USE_ELASTIC_GPU
 		int nnz_max = 0;
 		int cnt = 0;
 		THessian all_tmp[7];
@@ -155,32 +155,32 @@ namespace polyfem::solver
 		double *hessian_val;
 		int *hessian_row, *hessian_col, hessian_nnz = 0;
 		timerg.start();
-		hessian_row = ALLOCATE_GPU<int>(hessian_row, (hessian.cols()+1)*sizeof(int));
-		hessian_col = ALLOCATE_GPU<int>(hessian_col, nnz_max*sizeof(int));
-		hessian_val = ALLOCATE_GPU<double>(hessian_val, nnz_max*sizeof(double));
+		hessian_row = ALLOCATE_GPU<int>(hessian_row, (hessian.cols() + 1) * sizeof(int));
+		hessian_col = ALLOCATE_GPU<int>(hessian_col, nnz_max * sizeof(int));
+		hessian_val = ALLOCATE_GPU<double>(hessian_val, nnz_max * sizeof(double));
 		timerg.stop();
 		logger().trace("CUDA MALLOC HESSIAN {}s", timerg.getElapsedTime());
-		if (hessian.nonZeros()>0)
+		if (hessian.nonZeros() > 0)
 		{
 			timerg.start();
-			cudaMemcpy(hessian_row, hessian.outerIndexPtr(), sizeof(int) * (hessian.cols()+1), cudaMemcpyHostToDevice);
+			cudaMemcpy(hessian_row, hessian.outerIndexPtr(), sizeof(int) * (hessian.cols() + 1), cudaMemcpyHostToDevice);
 			cudaMemcpy(hessian_col, hessian.innerIndexPtr(), sizeof(int) * hessian.nonZeros(), cudaMemcpyHostToDevice);
 			cudaMemcpy(hessian_val, hessian.valuePtr(), sizeof(double) * hessian.nonZeros(), cudaMemcpyHostToDevice);
 			timerg.stop();
 			logger().trace("DATA MOVING HTOD (HESSIAN) {}s", timerg.getElapsedTime());
 		}
 
-		for (int i=0; i<cnt; i++)
+		for (int i = 0; i < cnt; i++)
 		{
 			THessian tmp = all_tmp[i];
 
-			if (tmp.nonZeros()==0)
+			if (tmp.nonZeros() == 0)
 				continue;
 
-			if (hessian_nnz==0)
+			if (hessian_nnz == 0)
 			{
 				timerg.start();
-				cudaMemcpy(hessian_row, tmp.outerIndexPtr(), sizeof(int) * (tmp.cols()+1), cudaMemcpyHostToDevice);
+				cudaMemcpy(hessian_row, tmp.outerIndexPtr(), sizeof(int) * (tmp.cols() + 1), cudaMemcpyHostToDevice);
 				cudaMemcpy(hessian_col, tmp.innerIndexPtr(), sizeof(int) * tmp.nonZeros(), cudaMemcpyHostToDevice);
 				cudaMemcpy(hessian_val, tmp.valuePtr(), sizeof(double) * tmp.nonZeros(), cudaMemcpyHostToDevice);
 				timerg.stop();
@@ -196,7 +196,7 @@ namespace polyfem::solver
 			}
 		}
 		timerg.start();
-		hessian.reserve(hessian_nnz);     
+		hessian.reserve(hessian_nnz);
 		cudaMemcpy(hessian.outerIndexPtr(), hessian_row, sizeof(int) * (hessian.cols() + 1), cudaMemcpyDeviceToHost);
 		cudaMemcpy(hessian.innerIndexPtr(), hessian_col, sizeof(int) * hessian_nnz, cudaMemcpyDeviceToHost);
 		cudaMemcpy(hessian.valuePtr(), hessian_val, sizeof(double) * hessian_nnz, cudaMemcpyDeviceToHost);

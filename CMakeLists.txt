@@ -116,6 +116,7 @@ if(WITH_GPU)
     add_definitions(-DUSE_GPU)
 
     set(USE_NONLINEAR_GPU OFF)
+    set(USE_ELASTIC_GPU OFF)
 
     if(USE_NONLINEAR_GPU)
         add_definitions(-DUSE_NONLINEAR_GPU)

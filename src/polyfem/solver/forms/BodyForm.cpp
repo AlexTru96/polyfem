@@ -68,7 +68,12 @@ namespace polyfem::solver
 	double BodyForm::value_unweighted(const Eigen::VectorXd &x) const
 	{
 #ifdef USE_GPU
+#ifdef USE_ELASTIC_GPU
 		return rhs_assembler_.compute_energy_GPU(x, local_neumann_boundary_, n_boundary_samples_, t_, data_gpu_);
+#endif
+#ifndef USE_ELASTIC_GPU
+		return rhs_assembler_.compute_energy(x, local_neumann_boundary_, density_, n_boundary_samples_, t_);
+#endif
 #endif
 #ifndef USE_GPU
 		return rhs_assembler_.compute_energy(x, local_neumann_boundary_, density_, n_boundary_samples_, t_);
